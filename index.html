@@ -104,14 +104,53 @@
            margin-top: 60px;  
            font-size: 14px;  
        }  
+       .video-section {
+    padding: 40px 20px;
+    background-color: #eef2f3;
+}
+
+.video-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 </style>  
 </head>  
 <body>  
 <header>  
 <h1>Trash Planner</h1>  
 <p>Pametna aplikacija za pravovremeno i jednostavno zbrinjavanje otpada</p>  
-</header>  
-<section>  
+</header>
+<section class="video-section">
+    <div class="video-wrapper">
+        <!-- YouTube / Vimeo video -->
+        <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Trash Planner video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- Ako želiš lokalni video umjesto YouTubea:
+        <video controls>
+            <source src="video/trash-planner.mp4" type="video/mp4">
+            Vaš preglednik ne podržava video.
+        </video>
+        -->
+    </div>
+</section>
+<section>
 <h2>O projektu</h2>  
 <p>  
        Trash Planner je digitalna aplikacija osmišljena kako bi korisnicima omogućila jednostavno praćenje  
