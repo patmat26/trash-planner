@@ -12,7 +12,7 @@
            line-height: 1.6;  
        }  
        header {  
-           background: linear-gradient(135deg, #2ecc71, #27ae60);  
+           background: linear-gradient(135deg, #008f07, #03ad0c);  
            color: white;  
            padding: 60px 20px;  
            text-align: center;  
@@ -128,10 +128,35 @@
 </style>  
 </head>  
 <body>  
-<header>  
-<h1>Trash Planner</h1>  
-<p>Pametna aplikacija za pravovremeno i jednostavno zbrinjavanje otpada</p>  
+<header style="position:relative;">
+    <img
+        src="https://github.com/patmat26/trash-planner/blob/main/waste-bin-recycle-yellow_25030-68159.png?raw=true"
+        alt="Trash bin"
+        style="
+            position:absolute;
+            left:80px;
+            top:50%;
+            transform:translateY(-50%);
+            width:180px;
+            opacity:0.95;
+        "
+    >
+     <img
+        src="https://github.com/patmat26/trash-planner/blob/main/fulled-opened-lid-container-storing-250nw-2432870983.png?raw=true"
+        alt="Trash bin"
+        style="
+            position:absolute;
+            left:1000px;
+            top:50%;
+            transform:translateY(-50%);
+            width:250px;
+            opacity:0.95;
+        "
+    >
+    <h1>Trash Planner</h1>
+    <p>Pametna aplikacija za pravovremeno i jednostavno zbrinjavanje otpada</p>
 </header>
+
 <section class="video-section">
     <div class="video-wrapper">
         <!-- YouTube / Vimeo video -->
@@ -156,22 +181,86 @@
        Trash Planner je digitalna aplikacija osmišljena kako bi korisnicima omogućila jednostavno praćenje  
        termina odvoza otpada i pravovremeno informiranje o vrstama otpada koje se prikupljaju.  
 </p>  
+<div style="margin-top:30px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+    <div style="flex:1; min-width:280px; text-align:center;">
+        <img 
+            src="https://reviewed-com-res.cloudinary.com/image/fetch/s--74KcKkRz--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1200/https://reviewed-production.s3.amazonaws.com/1551885164000/Best-Outdoor-Trash-Her.jpg" 
+            alt="Pravilno zbrinjavanje otpada"
+            style="max-width:89%; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.15);"
+        >
+        
+    </div>
+
+    <div style="flex:1; min-width:280px; text-align:center;">
+        <img 
+            src="https://www.hoamanagement.com/wp-content/uploads/2022/12/Are-HOA-Trash-Cans-Becoming-A-Problem.jpeg" 
+            alt="Neorganizirano zbrinjavanje otpada"
+            style="max-width:100%; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.15);"
+        >
+        
+    </div>
+</div>
 </section>  
 <section>  
 <h2>Zašto podržati Trash Planner?</h2>  
 <div class="features">  
-<div class="feature-box">  
-<h3>Pravovremene obavijesti</h3>  
-<p>Aplikacija korisnike upozorava unaprijed kako bi se izbjeglo propuštanje odvoza otpada.</p>  
-</div>  
+<div class="feature-box" style="position:relative; overflow:hidden;">
+    <h3>Pravovremene obavijesti</h3>
+    <p>
+        Aplikacija korisnike obavještava unaprijed kako bi se izbjeglo propuštanje
+        termina odvoza otpada.
+    </p>
+
+    <img 
+        src="https://github.com/patmat26/trash-planner/blob/main/bell.png?raw=true"
+        alt="Ikona obavijesti"
+        style="
+            position:absolute;
+            top:15px;
+            right:15px;
+            width:65px;
+            opacity:0.9;
+            animation: bell-ring 2.5s infinite ease-in-out;
+            transform-origin: top center;
+        "
+    >
+
+    <style>
+        @keyframes bell-ring {
+            0%   { transform: rotate(0deg); }
+            5%   { transform: rotate(8deg); }
+            10%  { transform: rotate(-8deg); }
+            15%  { transform: rotate(6deg); }
+            20%  { transform: rotate(-6deg); }
+            25%  { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+    </style>
+</div>
+
 <div class="feature-box">  
 <h3>Jednostavno korištenje</h3>  
 <p>Intuitivno i user-friendly sučelje prilagođeno svim korisnicima.</p>  
 </div>  
-<div class="feature-box">  
-<h3>Ekološka odgovornost</h3>  
-<p>Poticanje pravilnog razvrstavanja otpada i očuvanja okoliša.</p>  
-</div>  
+<div class="feature-box" style="position:relative; overflow:hidden;">
+    <h3>Ekološka odgovornost</h3>
+    <p>
+        Trash Planner potiče pravilno razvrstavanje otpada i odgovorniji odnos
+        prema okolišu, čime se doprinosi očuvanju prirode i smanjenju onečišćenja.
+    </p>
+
+    <img 
+        src="https://img.freepik.com/free-vector/earth-globe-cartoon-sticker-white-background_1308-79616.jpg"
+        alt="Ekološka odgovornost"
+        style="
+            position:absolute;
+            top:15px;
+            right:15px;
+            width:70px;
+            opacity:0.9;
+        "
+    >
+</div> 
 </div>  
 </section>  
 <section>  
